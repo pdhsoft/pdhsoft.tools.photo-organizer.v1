@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-    name='photo-organizer',
-    version='1.0',
-    author='Ihr Name',
+    name='Photo-Organizer',
+    version='1.0.2',
+    author='pdhsoft',
     install_requires=[
         'Pillow',
         'pyinstaller',

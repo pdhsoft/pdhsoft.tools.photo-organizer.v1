@@ -1,24 +1,32 @@
 # Photo Organizer
 
-Dieses Projekt organisiert Fotos aus einem Quellverzeichnis in ein Zielverzeichnis basierend auf dem Datum, an dem die Fotos aufgenommen wurden.
+Dieses Projekt organisiert Fotos und Videos aus einem Quellverzeichnis in ein Zielverzeichnis basierend auf dem Datum, an dem die Fotos / Videos aufgenommen wurden.
 
 ## Installation
 
 Um die erforderlichen Abhängigkeiten zu installieren, führen Sie den folgenden Befehl aus:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
 ## Verwendung
 
 Das Programm erwartet zwei Parameter:
+
 1. Quellverzeichnis: Der Ordner mit den zu sortierenden Fotos
 2. Zielverzeichnis: Der Ordner, in dem die sortierte Struktur erstellt werden soll
 
 Beispiel:
+
 ```bash
 python src/photo_organizer.py /pfad/zum/quellordner /pfad/zum/zielordner
+```
+
+oder mit der exe-Datei:
+
+```bash
+photo_organizer.exe /pfad/zum/quellordner /pfad/zum/zielordner
 ```
 
 Passen Sie die `source_directory` und `target_directory` Variablen im Skript an oder modifizieren Sie das Skript, um die Verzeichnisse über Befehlszeilenparameter zu akzeptieren.
@@ -43,6 +51,6 @@ setup(
 
 Führen Sie dann den folgenden Befehl aus, um die ausführbare Datei zu erstellen:
 
-```
+```bash
 pyinstaller --onefile src/photo_organizer.py
 ```
